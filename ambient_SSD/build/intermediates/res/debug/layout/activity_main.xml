@@ -1,0 +1,192 @@
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/socialsituation"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" ></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notification"
+            android:layout_gravity="center"
+            android:id="@+id/time"/>
+
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioSocial">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/a1"
+                android:text="@string/a1"
+                android:checked="false"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/b1"
+                android:text="@string/b1"
+                android:checked="false"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/c1"
+                android:text="@string/c1"
+                android:checked="false"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/d1"
+                android:text="@string/d1"
+                android:checked="false"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/e1"
+                android:text="@string/e1"
+                android:checked="false"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/f1"
+                android:text="@string/f1"
+                android:checked="false"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/h1"
+                android:text="@string/h1"
+                android:checked="false"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/i1"
+                android:text="@string/i1"
+                android:checked="false"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/j1"
+                android:text="@string/j1"
+                android:checked="false"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/k1"
+                android:text="@string/k1"
+                android:checked="false"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/l1"
+                android:text="@string/l1"
+                android:checked="false"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/m1"
+                android:text="@string/m1"
+                android:checked="false"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/n1"
+                android:text="@string/n1"
+                android:checked="false"
+                />
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/conversation"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+
+
+            <CheckBox android:id="@+id/a2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/a2"
+                android:onClick="selectItem"/>
+                />
+
+            <CheckBox android:id="@+id/b2"
+               android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/b2"
+            android:onClick="selectItem"/>
+
+        <CheckBox android:id="@+id/c2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/c2"
+            android:onClick="selectItem"/>
+
+        <CheckBox android:id="@+id/d2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/d2"
+            android:onClick="selectItem"/>
+
+
+
+
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save_me"
+            android:id="@+id/btnDisplay"
+            android:onClick="save"
+            android:layout_toEndOf="@+id/textView4"
+            android:layout_toRightOf="@+id/socialsituation" />
+
+
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+
+
+<!-- From: file:/D:/Users/admin/AndroidStudioProjects/com.aware.plugin.social/ambient_SSD/src/main/res/layout/activity_main.xml -->

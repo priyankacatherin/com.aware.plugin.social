@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.aware.plugin.ambient_ssd">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon, android:theme">
+
+        <service
+            android:name=".Plugin"
+            android:exported="true" />
+
+        <activity
+            android:name=".Settings"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true" />
+
+        <service
+            android:name=".Plugin$AudioAnalyser"
+            android:exported="true" />
+
+        <provider
+            android:name=".Provider"
+            android:authorities="com.aware.plugin.ambient_ssd.provider.ambient_ssd"
+            android:exported="true"
+            android:readPermission="com.aware.READ_CONTEXT_DATA"
+            android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
+        <provider
+            android:name=".EsmProvider"
+            android:authorities="${applicationId}.provider.esm.example"
+            android:exported="true"
+            android:readPermission="com.aware.READ_CONTEXT_DATA"
+            android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
+
+        <activity
+            android:name=".EsmActivity"
+            android:label="@string/app_name" >
+
+        </activity>
+        <activity
+            android:name=".Esm2"
+            android:label="@string/title_activity_esm2" >
+        </activity>
+        <activity android:name=".CalendarActivity"
+            android:label="Google Calendar API Android Quickstart"/>
+    </application>
+
+</manifest>
